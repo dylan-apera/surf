@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api\\weather-forecast-api.csproj",
+      "projectUniqueName": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
       "projectName": "weather-forecast-api",
-      "projectPath": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api\\weather-forecast-api.csproj",
+      "projectPath": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
       "packagesPath": "C:\\Users\\GGPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api\\obj\\",
+      "outputPath": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\GGPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

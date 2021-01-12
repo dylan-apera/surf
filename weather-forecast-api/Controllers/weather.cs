@@ -19,7 +19,8 @@ namespace weather_forecast_api.Controllers
             var weatherForecast = new[]
             {
                 new { breakName = "Muriawai", highTide = "12:30AM & 11:00 AM", lowTide = "6:30AM & 5:PM", wind = "North North East Winds @ 3 knots", swell = "1.2M from the West"},
-                new { breakName = "Hamilton", highTide = "12:30AM & 11:00 AM", lowTide = "6:30AM & 5:PM", wind = "North North East Winds @ 3 knots", swell = "1.2M from the West"}
+                new { breakName = "Hamilton", highTide = "12:30AM & 11:00 AM", lowTide = "6:30AM & 5:PM", wind = "North North East Winds @ 3 knots", swell = "1.2M from the West"},
+                new { breakName = "Social Center", highTide = "12:30AM & 11:00 AM", lowTide = "6:30AM & 5:PM", wind = "East Winds @ 10 knots", swell = "1.2M from the West"}
             };
             return new JsonResult(weatherForecast);
         }            
