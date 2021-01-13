@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj": {}
+    "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj": {
+    "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
+        "projectUniqueName": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj",
         "projectName": "weather-forecast-api",
-        "projectPath": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
-        "packagesPath": "C:\\Users\\GGPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GGPC\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\obj\\",
+        "projectPath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj",
+        "packagesPath": "C:\\Users\\dylanapera\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\GGPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dylanapera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
