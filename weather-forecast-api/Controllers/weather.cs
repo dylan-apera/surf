@@ -26,6 +26,7 @@ namespace weather_forecast_api.Controllers
         }            
     }
 }
+//Adding comment to test authorisation issues
 /*
 
     [Route("[controller]")]
