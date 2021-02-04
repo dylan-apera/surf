@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "F8nHgYYOfHHNIpdXPSToMql/8EvLjE0M0eLQOXHV/bJVA0uC8n7ViNAvAdisxnw3i1Ns37kXz4KlOGpy4n7jvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
+=======
+  "dgSpecHash": "wAfGg7v9iEXbqAjhkAJYZj+tXfY+w3ZLa2Cj5Wvq/1sFkZQaSmjQlHedfQ1WOzy3aLpLJE4ap9/f1p0Y5HgobQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj",
+>>>>>>> 7505e6abd164b77c59c1f6c8fadbd7ebc4ce58fa
   "expectedPackageFiles": [],
   "logs": []
 }
