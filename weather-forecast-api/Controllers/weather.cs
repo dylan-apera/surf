@@ -25,6 +25,8 @@ namespace weather_forecast_api.Controllers
             return new JsonResult(weatherForecast);
         }            
     }
+
+    
 }
 //Adding comment to test authorisation issues
 /*
