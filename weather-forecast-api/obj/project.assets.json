@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\dylanapera\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
-      "projectName": "weather-forecast-api",
-      "projectPath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\weather-forecast-api.csproj",
-      "packagesPath": "C:\\Users\\dylanapera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surfMonitor\\weather-forecast-api\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj",
       "projectName": "weather-forecast-api",
       "projectPath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\weather-forecast-api.csproj",
       "packagesPath": "C:\\Users\\dylanapera\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\obj\\",
->>>>>>> 7505e6abd164b77c59c1f6c8fadbd7ebc4ce58fa
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dylanapera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -51,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -69,12 +63,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.405\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
->>>>>>> 7505e6abd164b77c59c1f6c8fadbd7ebc4ce58fa
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\dylanapera\\r\\dylan-apera\\surf\\weather-forecast-api\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
