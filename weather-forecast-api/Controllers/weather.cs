@@ -32,7 +32,9 @@ namespace weather_forecast_api.Controllers
 
         public class Surf
         {
-            public string Id { get; set; }           
+            public string Id { get; set; } 
+            public string surfSpot { get; set; }
+            public string weather { get; set; }
         }
     }
     
