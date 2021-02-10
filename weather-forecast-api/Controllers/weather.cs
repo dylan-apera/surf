@@ -13,7 +13,8 @@ namespace weather_forecast_api.Controllers
     [ApiController]
     public class Weather : ControllerBase
     {
-        private static ConcurrentDictionary <string, Surf> _data = new ConcurrentDictionary <string, Surf> ();
+
+        private static ConcurrentDictionary<string, Surf> _data = new ConcurrentDictionary<string, Surf>();
 
         // GET: api/<ValuesController>
         [HttpGet]
@@ -28,15 +29,22 @@ namespace weather_forecast_api.Controllers
             return new JsonResult(weatherForecast);*/
 
             return new JsonResult(_data);
-        }            
+        }
 
         [HttpPost]
         public IActionResult Post([FromBody] Surf surf)
         {
             _data.TryAdd(surf.Id, surf);
+            //_data.TryAdd(surf.Id, surf);
             return Ok();
         }
+
+        public class Surf
+        {
+            public string Id { get; set; }
+        }
     }
+    
 }
 /*
 //Adding comment to test authorisation issues
