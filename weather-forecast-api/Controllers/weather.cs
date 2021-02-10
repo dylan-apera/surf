@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace weather_forecast_api.Controllers
 {
-    [Route("[controller]")]
+    [Route("[controller]")] 
     [ApiController]
     public class Weather : ControllerBase
     {
