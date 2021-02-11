@@ -59,6 +59,15 @@ namespace weather_forecast_api.Controllers
             _data.TryUpdate( TryAdd(surf.Id, surf);
             return Ok();
         }*/
+
+        // PUT api/<ValuesController>/5
+        [HttpPut("{id}")]
+        public IActionResult Put(string id, [FromBody] Surf surf)
+        {
+            _data.TryUpdate(id, TryAdd(Surf.id, Surf surf));
+         
+            return Ok();
+        }
         public class Surf
         {
             public string Id { get; set; } 
