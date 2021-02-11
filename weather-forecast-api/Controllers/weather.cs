@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace weather_forecast_api.Controllers
 {
-    [Route("[controller]")] 
+    [Route("[controller]")]
     [ApiController]
     public class Weather : ControllerBase
     {
@@ -20,16 +21,44 @@ namespace weather_forecast_api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return new JsonResult(_data);
+            return new JsonResult(_data.Select(d => d.Value)); //lambda
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(string id)
+        {
+            if (_data.TryGetValue(id, out Surf surf))
+                return new JsonResult(surf);            
+            else
+                return NotFound();
         }
 
         [HttpPost]
         public IActionResult Post([FromBody] Surf surf)
         {
-            _data.TryAdd(surf.Id, surf);
-            return Ok();
+            if (_data.TryAdd(surf.Id, surf))
+                return new JsonResult(surf);
+            else
+                return Conflict();
+
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult Delete(string id)
+        {
+            if (_data.TryRemove(id, out _))//example of a discard "_" 
+                return Ok();
+            else 
+                return NotFound();
+
+        }
+        /*
+        [HttpPut]
+        public IActionResult Put(string id, [FromBody] Surf surf)
+        {
+            _data.TryUpdate( TryAdd(surf.Id, surf);
+            return Ok();
+        }*/
         public class Surf
         {
             public string Id { get; set; } 
