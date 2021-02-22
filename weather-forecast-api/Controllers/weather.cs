@@ -3,6 +3,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -33,7 +34,7 @@ namespace weather_forecast_api.Controllers
                 return NotFound();
         }
 
-        [HttpPost]
+        [HttpPost] //Create
         public IActionResult Post([FromBody] Surf surf)
         {
             if (_data.TryAdd(surf.Id, surf))
@@ -52,21 +53,32 @@ namespace weather_forecast_api.Controllers
                 return NotFound();
 
         }
-        /*
-        [HttpPut]
-        public IActionResult Put(string id, [FromBody] Surf surf)
-        {
-            _data.TryUpdate( TryAdd(surf.Id, surf);
-            return Ok();
-        }*/
-
+     
         // PUT api/<ValuesController>/5
-        [HttpPut("{id}")]
+        [HttpPut("{id}")]//Update
         public IActionResult Put(string id, [FromBody] Surf surf)
         {
-            _data.TryUpdate(id, TryAdd(Surf.id, Surf surf));
-         
-            return Ok();
+            if (!_data.TryGetValue(id, out Surf currentValue)) return NotFound();
+
+            if(!_data.TryUpdate(id, surf, currentValue)) return Conflict();
+
+            return new JsonResult(surf); 
+            //Compare value with what is stored in memory
+
+            //Surf oldVal = _data.TryGetValue(id, out Surf surf); 
+
+           
+
+            //_data.TryUpdate(id, surf, (_data.TryGetValue(id, out Surf surf));
+
+            //_data.TryUpdate(id, surf, _data.TryAdd(id)
+
+            /*Surf oldVal = _data.Values;
+
+            if (_data.TryUpdate(id, surf, _data.AddOrUpdate()))
+                return new JsonResult(surf);
+            else
+                return Conflict();    */
         }
         public class Surf
         {
@@ -77,3 +89,35 @@ namespace weather_forecast_api.Controllers
     }
     
 }
+
+/*
+ [HttpPut("{id}")]
+public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
+{
+    if (id != todoItem.Id)
+    {
+        return BadRequest();
+    }
+
+    _context.Entry(todoItem).State = EntityState.Modified;
+
+    try
+    {
+        await _context.SaveChangesAsync();
+    }
+    catch (DbUpdateConcurrencyException)
+    {
+        if (!TodoItemExists(id))
+        {
+            return NotFound();
+        }
+        else
+        {
+            throw;
+        }
+    }
+
+    return NoContent();
+}
+ 
+ */
